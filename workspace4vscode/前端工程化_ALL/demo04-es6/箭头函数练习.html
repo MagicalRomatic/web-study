@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xdd{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            }
+    </style>
+</head>
+<body>
+    <div id="xdd"></div>
+    <script>
+        var xdd = document.getElementById("xdd")
+        xdd.onclick = function(){
+            //箭头函数中的this指向的是上一层的上下文
+            window.setTimeout(() => {
+                this.style.backgroundColor = "yellow"
+            },2000)
+
+            // window.setTimeout(function(){
+            //     //此时普通函数中的this指向的是window
+            //     console.log(this)
+            //     this.style.backgroundColor = "yellow"
+            // },2000)
+        }
+    </script>
+</body>
+</html>

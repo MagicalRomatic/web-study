@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      function clickAll(){
+        //操作复选框要获取dom对象
+        //按表签名获取dom对象
+        //获取的对象是标签集合，按照html页面从上到下排列
+        //与数组的操作相同
+        var inputs = document.getElementsByTagName("input");
+        //alert(hobbies[0].value);
+        for(var i = 0; i < inputs.length; i++){
+            inputs[i].checked = true;
+        }
+      }
+    </script>
+</head>
+<body>
+  <input type="checkbox" value="java"/>Java
+  <input type="checkbox" value="cpp"/>C++
+  <input type="checkbox" value="js"/>JavaScript
+  <br/>
+  <button onclick="clickAll()">全选</button>
+
+
+</body>
+</html>

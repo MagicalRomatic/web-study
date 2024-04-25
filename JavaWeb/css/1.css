@@ -1,0 +1,48 @@
+div{
+    border: 1px solid red;
+    color: blue;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    font-size: 30px;
+    /*框居中*/
+    margin-left: auto;
+    margin-right: auto;
+    /*文字居中*/
+    text-align: center;
+}
+
+span{
+    border: 1px solid red;
+}
+
+a{
+    /*去掉下划线*/
+    text-decoration: none;
+}
+
+table{
+    border: 1px green solid;
+}
+
+td{
+    border: 1px green solid;
+    /*合并边框  Edge不行*/
+    border-collapse: collapse;
+}
+
+ul{
+    /*去除表前的修饰*/
+    list-style: none;
+}
+
+.class01{
+   color: red;
+   font-size: 20px;
+}
+
+#id001{
+    color: yellow;
+    font-size: 20px;
+    border: 1px green solid;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [11,22,33,44]
+        let [a,b,c,d,e = 10] = arr
+        console.log(a,b,c,d,e)
+
+        //对象使用解构表达式
+        let person = {
+            name:'张三',
+            age:18,
+        }
+        let {name,age} = person
+        console.log(name,age)
+
+        //解构表达式应用在方法的参数列表
+        function showAll([a,b,c]){
+            console.log(a,b,c)
+        }
+        showAll(arr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

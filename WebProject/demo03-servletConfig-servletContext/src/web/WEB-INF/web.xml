@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="4.0"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 					http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <display-name>xss</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--servletContext配置所有servlet的参数，是单例-->
+    <context-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>username</param-name>
+        <param-value>zhangsan</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>servlet1</servlet-class>
+        <!--配置servlet初始参数-->
+        <init-param>
+            <param-name>keya</param-name>
+            <param-value>valuea</param-value>
+        </init-param>
+        <init-param>
+            <param-name>keyb</param-name>
+            <param-value>valueb</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+</web-app>

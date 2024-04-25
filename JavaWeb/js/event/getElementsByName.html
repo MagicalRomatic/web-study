@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      function clickAll(){
+        //操作复选框要获取dom对象
+        //获取的对象是标签集合，按照html页面从上到下排列
+        var hobbies = document.getElementsByName("hobby");
+        //alert(hobbies[0].value);
+        for(var i = 0; i < hobbies.length; i++){
+          hobbies[i].checked = true;
+        }
+      }
+
+      function clickNo(){
+        var hobbies = document.getElementsByName("hobby");
+        //alert(hobbies[0].value);
+        for(var i = 0; i < hobbies.length; i++){
+          hobbies[i].checked = false;
+        }
+
+      }
+
+      function clickReverse(){
+        var hobbies = document.getElementsByName("hobby");
+        //alert(hobbies[0].value);
+        for(var i = 0; i < hobbies.length; i++){
+          hobbies[i].checked = !hobbies[i].checked;
+        }
+
+      }
+    </script>
+</head>
+<body>
+  <input type="checkbox" name="hobby" value="java"/>Java
+  <input type="checkbox" name="hobby" value="cpp"/>C++
+  <input type="checkbox" name="hobby" value="js"/>JavaScript
+  <br/>
+  <button onclick="clickAll()">全选</button>
+  <button onclick="clickNo()">全不选</button>
+  <button onclick="clickReverse()">反选</button>
+
+</body>
+</html>

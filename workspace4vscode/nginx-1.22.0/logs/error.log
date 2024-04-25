@@ -1,0 +1,19 @@
+2024/03/27 16:45:20 [emerg] 19056#20128: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:45:40 [emerg] 15280#18136: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:52:31 [emerg] 17228#13788: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:52:49 [emerg] 12300#20136: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:52:52 [emerg] 11884#15508: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:52:57 [emerg] 19664#15008: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:53:51 [emerg] 13604#8256: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:54:08 [emerg] 15796#19328: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:58:14 [emerg] 16984#18200: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 16:58:16 [emerg] 6792#18168: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 17:01:07 [emerg] 20256#18784: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 17:09:32 [emerg] 17048#19284: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 17:14:09 [emerg] 19264#15008: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 17:14:58 [emerg] 2320#18944: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 17:15:29 [emerg] 9052#1120: CreateFile() "E:\workspace4vscode\Lecture03-Ajax-Element\资料\nginx-1.22.0/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2024/03/27 17:19:07 [notice] 12420#16348: signal process started
+2024/03/27 17:19:07 [error] 12420#16348: invalid PID number "" in "E:\workspace4vscode\nginx-1.22.0/logs/nginx.pid"
+2024/03/27 17:22:01 [notice] 17420#9276: signal process started
+2024/03/27 17:22:01 [error] 17420#9276: invalid PID number "" in "E:\workspace4vscode\nginx-1.22.0/logs/nginx.pid"

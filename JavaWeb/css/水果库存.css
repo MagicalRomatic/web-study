@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #808080;
+}
+
+div{
+    position: relative;
+    float: left;
+}
+
+#container{
+    width: 80%;
+    height: 100%;
+    background-color: #99FF99;
+    margin-left: 10%;
+}
+
+#fruit_table{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 200px;
+    line-height: 28px;
+
+
+}
+
+#fruit_table, #fruit_table th, #fruit_table td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px;
+    font-family: "黑体";
+    font-weight: lighter;
+    color: #666666;
+}

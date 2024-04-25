@@ -1,0 +1,78 @@
+<web-app id="WebApp_ID" version="4.0"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 					http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <display-name>xss</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--
+    配置filter,并为filter起别名
+    bug  filter-class出问题了，连接不上
+    -->
+   <!-- <filter>
+        <filter-name>loggingFilter</filter-name>
+        <filter-class>src.java.filters.LoggingFilter</filter-class>
+    </filter>
+
+    &lt;!&ndash;
+    为别名对应的filter配置要过滤的目标资源
+    &ndash;&gt;
+    <filter-mapping>
+        <filter-name>loggingFilter</filter-name>
+        &lt;!&ndash;通过映射路径确定过滤资源&ndash;&gt;
+        <url-pattern>/servlet1</url-pattern>
+        &lt;!&ndash;通过servlet别名确定过滤资源&ndash;&gt;
+        &lt;!&ndash;<servlet-name>servletA</servlet-name>&ndash;&gt;
+        &lt;!&ndash;<url-pattern>/*</url-pattern>&ndash;&gt;
+        &lt;!&ndash;<url-pattern>/*.html</url-pattern>&ndash;&gt;
+    </filter-mapping>
+
+    <filter>
+        <filter-name>lifeCycleFilter</filter-name>
+        <filter-class>src.java.filters.lifeCycleFilter</filter-class>
+        <init-param>
+            <param-name>dateTimeParameter</param-name>
+            <param-value>yyyy-MM-dd HH:mm:ss</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>lifeCycleFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>-->
+
+    <!--配置多个过滤器-->
+    <filter>
+        <filter-name>Filter1</filter-name>
+        <filter-class>filters.Filter1</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter1</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Filter2</filter-name>
+        <filter-class>filters.Filter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Filter3</filter-name>
+        <filter-class>filters.Filter3</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter3</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

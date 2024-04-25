@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function fun(){
+            return 10
+            //throw new Error("出错了")
+        }
+
+        async function fun2(){
+            try{
+                let res = await Promise.reject("出错了")
+            }catch(e){
+                console.log("catch:"+e)
+            }
+
+            //console.log("success:"+res)
+        }
+
+        fun2()
+
+
+        /* async function fun(){
+            //return 10
+            throw new Error("出错了")
+        }
+
+        let promise = fun()
+
+        promise.then(
+            function(value){
+                console.log("success:"+value)
+            }
+        ).catch(
+            function(value){
+                console.log("fail:"+value)
+            }
+        ) */
+    </script>
+</body>
+</html>

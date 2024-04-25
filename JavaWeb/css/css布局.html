@@ -1,0 +1,66 @@
+<!--DOCTYPE html 去掉是因为html5不支持改高度-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--实现css的一种布局-->
+    <!--float失效了，懵了-->
+    <style type="text/css">
+      body{
+        //间距和填充都为0
+        margin: 0;
+        padding: 0;
+      }
+
+      div{
+        //布局样式控制
+        position: relative;
+      }
+
+      #div_top{
+        background-color: orange;
+        height: 20%;
+      }
+
+      #div_left{
+        background-color: green;
+        height: 80%;
+        width: 15%;
+        //向左靠，将右边的空间剩余
+        float: left;
+      }
+
+      #div_main{
+        background-color: blue;
+        width: 85%;
+        height: 70%;
+        float: left;
+
+      }
+
+      #div_bottom{
+        background-color: brown;
+        width: 85%;
+        height: 10%;
+        float: left;
+      }
+
+      #div_container{
+        width: 80%;
+        height: 100%;
+        border: 1px solid black;
+        margin-left: 10%;
+      }
+    </style>
+</head>
+<body>
+  <div id="div_container">
+    <div id="div_top">div_top</div>
+    <div id="div_left">div_left</div>
+    <div id="div_main">div_main</div>
+    <div id="div_bottom">div_bottom</div>
+  </div>
+
+
+</body>
+</html>
